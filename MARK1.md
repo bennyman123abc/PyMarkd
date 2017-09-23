@@ -22,6 +22,7 @@ Quote:
 import sys
 
 print("Hello World!")
-sys.exit()```
+sys.exit()
+```
 
 Congratulations on making it to the end of this PyMarkd demonstration. I was merely using it to test the features of PyMarkd. Here's a cookie! :cookie:
