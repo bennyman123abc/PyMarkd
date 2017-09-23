@@ -16,4 +16,10 @@
 
 Quote:
 > Do to me what you will.
-> However, don't do to my friends what you would me.
+> However, don't do to my friends what your would me.
+
+```python
+import sys
+
+print("Hello World!")
+sys.exit()```
