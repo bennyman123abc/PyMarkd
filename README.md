@@ -1,5 +1,2 @@
 # PyMarkd
-This is Markdown generated with PyMarkd by bennyman123abc.
-It is meant as a simple learning experience and a simpler way to write Markdown for projects.
-I find it quite stupid to remember all of the Markdown syntax functions so, I made a way to
-code Markdown in Python. Enjoy!
+PyMarkd is a project that I started to help with the creation of documentation. I had used Markdown before however, I do not like coding in straight Markdown because the syntax is too simplistic in my opinion. Because of this, I decided to code PyMarkd, a programming library that generates Markdown from simple Python. I will include a link to the documentation, which is why this was made in the first place. Hope you enjoy!
