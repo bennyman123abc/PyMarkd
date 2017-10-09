@@ -73,5 +73,8 @@ class Markd:
 			line = line + "\n"
 			file.write(line)
 		file.close()
+		print('')
+		print("Wrote file to " + self.filename)
+		print('')
 		if os.name == "nt":
 			os.system("pause")
