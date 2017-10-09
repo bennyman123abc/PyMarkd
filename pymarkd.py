@@ -2,8 +2,9 @@ import os
 import sys
 
 class Markd:
-	def __init__(self):
+	def __init__(self, filename):
 		self.markdown = []
+		self.filename = filename
 		
 	def add(self, text):
 		self.markdown.append(text)
@@ -55,19 +56,22 @@ class Markd:
 			self.add(text)
 			i+=1
 			
-	def blockQuote(self, lines):
+	def quote(self, lines):
 		for line in lines:
-			text = "> " + line
+			text = "> " + line + "\n"
 			self.add(text)
 			
 	def codeBlock(self, lang, text):
 		text = "```" + lang + "\n" + text + "\n```"
 		self.add(text)
 		
-	def write(self, filename):
+	def write(self):
+		filename = self.filename
 		file = open(filename, "w+")
 		for line in self.markdown:
 			print line
 			line = line + "\n"
 			file.write(line)
 		file.close()
+		if os.name == "nt":
+			os.system("pause")
